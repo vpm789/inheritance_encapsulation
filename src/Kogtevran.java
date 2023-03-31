@@ -37,4 +37,12 @@ public class Kogtevran extends Hogwarts{
         }
     }
 
+    @Override
+    public String toString() {
+        toString(getFirstName(), getLastName(), getWitchcraft(), getTransgression());
+        return ", mind=" + mind +
+                ", wisdom=" + wisdom +
+                ", wit=" + wit +
+                ", creativity=" + creativity;
+    }
 }

@@ -36,4 +36,9 @@ public abstract class Hogwarts {
             System.out.println(student.getFirstName() + " " + student.getLastName() + " и " + getFirstName() + " " + getLastName() + " это один и тот же студент");
         }
     }
+
+    protected void toString(String firstName, String lastName, int witchcraft, int transgression) {
+        System.out.print(firstName + " " + lastName + " " + "witchcraft=" + witchcraft + ", transgression=" + transgression);
+    }
+
 }

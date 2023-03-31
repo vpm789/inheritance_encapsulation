@@ -31,4 +31,12 @@ public class Gryffindor extends Hogwarts {
             System.out.println(gryffindor.getFirstName() + " и " + getFirstName() + " это один и тот же студент");
         }
     }
+
+    @Override
+    public String toString() {
+        toString(getFirstName(), getLastName(), getWitchcraft(), getTransgression());
+        return ", nobility=" + nobility +
+                ", honor=" + honor +
+                ", bravery=" + bravery;
+    }
 }

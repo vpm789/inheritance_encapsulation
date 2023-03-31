@@ -31,4 +31,12 @@ public class Puffenduy extends Hogwarts{
             System.out.println(puffenduy.getFirstName() + " и " + getFirstName() + " это один и тот же студент");
         }
     }
+
+    @Override
+    public String toString() {
+        toString(getFirstName(), getLastName(), getWitchcraft(), getTransgression());
+        return ", industriousness=" + industriousness +
+                ", loyalty=" + loyalty +
+                ", honesty=" + honesty;
+    }
 }
