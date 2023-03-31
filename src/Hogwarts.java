@@ -37,8 +37,11 @@ public abstract class Hogwarts {
         }
     }
 
-    protected void toString(String firstName, String lastName, int witchcraft, int transgression) {
-        System.out.print(firstName + " " + lastName + " " + "witchcraft=" + witchcraft + ", transgression=" + transgression);
+    @Override
+    public String toString() {
+        return "firstName=" + firstName +
+                ", lastName=" + lastName +
+                ", witchcraft=" + witchcraft +
+                ", transgression=" + transgression;
     }
-
 }

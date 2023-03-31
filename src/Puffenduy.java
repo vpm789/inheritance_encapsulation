@@ -34,8 +34,8 @@ public class Puffenduy extends Hogwarts{
 
     @Override
     public String toString() {
-        toString(getFirstName(), getLastName(), getWitchcraft(), getTransgression());
-        return ", industriousness=" + industriousness +
+        return super.toString() +
+                ", industriousness=" + industriousness +
                 ", loyalty=" + loyalty +
                 ", honesty=" + honesty;
     }
