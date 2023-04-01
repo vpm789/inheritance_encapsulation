@@ -1,3 +1,5 @@
+package JavaCore.OOP1;
+
 public abstract class Hogwarts {
     private String firstName;
     private String lastName;

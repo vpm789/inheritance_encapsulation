@@ -1,3 +1,5 @@
+package JavaCore.OOP1;
+
 public class Kogtevran extends Hogwarts{
     private int mind;
     private int wisdom;

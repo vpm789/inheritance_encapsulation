@@ -1,3 +1,5 @@
+package JavaCore.OOP1;
+
 public class Puffenduy extends Hogwarts{
     private int industriousness;
     private int loyalty;
