@@ -18,7 +18,7 @@ public class Main {
 
         };
 
-        ((Gryffindor) students[0]).compareGryffindor((Gryffindor) students[1]);
+        ((Gryffindor) students[0]).compareGryffindor((Gryffindor) students[2]);
         ((Puffenduy) students[3]).comparePuffenduy((Puffenduy) students[4]);
         ((Kogtevran) students[6]).compareKogtevran((Kogtevran) students[8]);
         ((Slytherin) students[9]).compareSlytherin((Slytherin) students[11]);
