@@ -2,37 +2,24 @@ package oop.part2;
 
 public class Main {
     public static void main(String[] args) {
-        Car[] cars = {
-                new Car("car1", 4),
-                new Car("car2", 4),
-        };
+        Car car = new Car("car1", 4);
+        Car car2 = new Car("car2", 4);
 
-        Truck[] trucks = {
-                new Truck("truck1", 6),
-                new Truck("truck2", 8),
-        };
+        Truck truck = new Truck("truck1", 6);
+        Truck truck2 = new Truck("truck2", 8);
 
-        Bicycle[] bicycles = {
-                new Bicycle("bicycle1", 2),
-                new Bicycle("bicycle2", 2),
-        };
+        Bicycle bicycle = new Bicycle("bicycle1", 2);
+        Bicycle bicycle2 = new Bicycle("bicycle2",2);
 
-        ServiceStation serviceStation = new ServiceStationTransports();
-        serviceStation.check(cars);
-        serviceStation.check(trucks);
-        serviceStation.check(bicycles);
+        serviceTransport(car);
+        serviceTransport(car2);
+        serviceTransport(truck);
+        serviceTransport(truck2);
+        serviceTransport(bicycle);
+        serviceTransport(bicycle2);
+    }
 
-
-        Transport[] transports = new Transport[cars.length+trucks.length+bicycles.length];
-        for (int i = 0; i < cars.length; i++) {
-            transports[i] = cars[i];
-        }
-        for (int i = 0; i < trucks.length; i++) {
-            transports[i+ cars.length] = trucks[i];
-        }
-        for (int i = 0; i < bicycles.length; i++) {
-            transports[i+cars.length+ trucks.length] =bicycles[i];
-        }
-
+    private static void serviceTransport(RepairTransport transport) {
+        transport.service();
     }
 }
