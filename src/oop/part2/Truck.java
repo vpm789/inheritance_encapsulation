@@ -16,6 +16,10 @@ public class Truck extends GeneralPropertiesTransport {
     }
     @Override
     public void service() {
+        System.out.println("Обслуживаем " + getModelName());
+        for (int i = 0; i < getWheelsCount(); i++) {
+            updateTyre();
+        }
         checkEngine();
         checkTrailer();
     }

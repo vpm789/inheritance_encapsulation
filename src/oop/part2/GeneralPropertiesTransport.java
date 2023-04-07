@@ -8,6 +8,15 @@ public abstract class GeneralPropertiesTransport implements RepairTransport {
         this.modelName = modelName;
         this.wheelsCount = wheelsCount;
     }
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public int getWheelsCount() {
+        return wheelsCount;
+    }
+
     public void updateTyre() {
         System.out.println("Меняем покрышку");
     }
