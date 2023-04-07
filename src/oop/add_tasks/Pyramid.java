@@ -1,8 +1,8 @@
 package oop.add_tasks;
 
-public class Pyramid extends Shape{
-    private double square;
-    private double height;
+public class Pyramid extends Shape {
+    protected double square;
+    protected double height;
 
     public Pyramid(double volume, double square, double height) {
         super(volume);
