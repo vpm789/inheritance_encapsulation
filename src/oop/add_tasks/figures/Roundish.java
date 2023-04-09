@@ -1,12 +1,7 @@
-package oop.add_tasks;
+package oop.add_tasks.figures;
 
 public abstract class Roundish extends Shape{
     protected double radius;
-
-    public Roundish(double volume, double radius) {
-        super(volume);
-        this.radius = radius;
-    }
 
     public double getRadius() {
         return radius;
