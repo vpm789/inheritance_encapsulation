@@ -1,8 +1,10 @@
 package exceptions;
 
+import java.util.regex.Pattern;
+
 public class Main {
     public static void main(String[] args) {
-        String login = "vpm";
+        String login = "vpmльль";
         String password = "vpm123";
         String confirmPassword = "vpm123";
         try {
@@ -17,10 +19,10 @@ public class Main {
     }
 
     static void checkAccount(String login, String password, String confirmPassword) {
-        if (login.length() > 20 && !login.matches("[a-zA-Z0-9_]+")) {
+        if (login.length() > 20 || !login.matches("[a-zA-Z0-9_]+")) {
             throw new WrongLoginException();
         }
-        if (!password.equals(confirmPassword) && !password.matches("[a-zA-Z0-9_]+")) {
+        if (!password.equals(confirmPassword) || !password.matches("[a-zA-Z0-9_]+")) {
             throw new WrongPasswordException();
         }
     }
